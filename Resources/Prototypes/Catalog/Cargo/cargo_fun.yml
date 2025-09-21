@@ -129,7 +129,7 @@
   cost: 500
   category: cargoproduct-category-name-fun
   group: market
-  
+
 - type: cargoProduct
   id: FunSharkPlushies
   abstract: true # Frontier
@@ -242,6 +242,7 @@
 
 - type: cargoProduct
   id: FunATV
+  abstract: true # Vox-Frontier
   icon:
     sprite: Objects/Vehicles/atv.rsi
     state: vehicle
