@@ -15,7 +15,7 @@
   minimumDistance: 1500
   maximumDistance: 2500
   spawnGroup: MarketStation
-  gridPath: /Maps/_NF/POI/trademall.yml
+  gridPath: /Maps/_VOX_NF/POI/trademall.yml
   addComponents:
   - type: IFF
     color: "#37C837"
@@ -38,7 +38,7 @@
 - type: gameMap
   id: TradeMall
   mapName: 'Trade Mall'
-  mapPath: /Maps/_NF/POI/trademall.yml
+  mapPath: /Maps/_VOX_NF/POI/trademall.yml
   minPlayers: 0
   stations:
     TradeMall:
