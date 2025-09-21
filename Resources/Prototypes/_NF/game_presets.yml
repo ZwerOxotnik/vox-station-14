@@ -12,7 +12,7 @@
     - BluespaceEventScheduler
     - BluespaceDungeonEventScheduler
     - BluespaceSalvageEventScheduler
-    - SmugglingEventScheduler
+    # - SmugglingEventScheduler
     - NFRoundstartVariation
 
 - type: gamePreset
@@ -29,7 +29,7 @@
     - BluespaceEventScheduler
     - BluespaceDungeonEventScheduler
     - BluespaceSalvageEventScheduler
-    - SmugglingEventScheduler
+    # - SmugglingEventScheduler
     - NFRoundstartVariation
 
 # Test preset: intended to be close enough to upstream stuff but should be
