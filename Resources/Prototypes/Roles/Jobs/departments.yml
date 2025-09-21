@@ -31,9 +31,9 @@
   # - Zookeeper # Frontier
   # - ServiceWorker # Frontier
   - Contractor # Frontier
-  - Mercenary # Frontier
-  - Pilot # Frontier
-  - Borg # Frontier
+  # - Mercenary # Frontier
+  # - Pilot # Frontier
+  # - Borg # Frontier
 
 - type: department
   id: CentralCommand
