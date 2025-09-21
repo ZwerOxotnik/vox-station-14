@@ -3,15 +3,15 @@
   startingInventory:
     # General
     AutolatheFlatpack: 4294967295 # Infinite
-    WeaponCapacitorRechargerFlatpack: 4294967295 # Infinite
-    BorgChargerFlatpack: 4294967295 # Infinite
+    # WeaponCapacitorRechargerFlatpack: 4294967295 # Infinite
+    # BorgChargerFlatpack: 4294967295 # Infinite
     NFHolopadShipFlatpack: 4294967295 # Infinite
     # Salvage
     #SalvageTechfabNFFlatpack: 4294967295 # Infinite
     OreProcessorFlatpack: 4294967295 # Infinite
     MaterialReclaimerFlatpack: 4294967295 # Infinite
     ScrapProcessorFlatpack: 4294967295 # Infinite
-    ShuttleGunKineticFlatpack: 4294967295 # Infinite
+    # ShuttleGunKineticFlatpack: 4294967295 # Infinite
     # Service
     #ServiceTechFabFlatpack: 4294967295 # Infinite
     CutterMachineFlatpack: 4294967295 # Infinite
@@ -24,12 +24,12 @@
     MachineFlatpackerFlatpack: 4294967295 # Infinite
     ExosuitFabricatorFlatpack: 4294967295 # Infinite
     CircuitImprinterFlatpack: 4294967295 # Infinite
-    GasThermoMachineFreezerFlatpack: 4294967295 # Infinite
+    # GasThermoMachineFreezerFlatpack: 4294967295 # Infinite
     PortableGeneratorJrPacmanFlatpack: 4294967295 # Infinite
     PortableGeneratorPacmanFlatpack: 4294967295 # Infinite
     PortableGeneratorSuperPacmanFlatpack: 4294967295 # Infinite
-    SolarAssemblyFlatpack: 4294967295 # Infinite
-    ComputerSolarControlFlatpack: 4294967295 # Infinite
+    # SolarAssemblyFlatpack: 4294967295 # Infinite
+    # ComputerSolarControlFlatpack: 4294967295 # Infinite
     GravityGeneratorMiniFlatpack: 4294967295 # Infinite
     ThrusterFlatpack: 4294967295 # Infinite
     GyroscopeFlatpack: 4294967295 # Infinite
