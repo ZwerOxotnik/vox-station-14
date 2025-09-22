@@ -1,0 +1,143 @@
+﻿- type: constructionGraph
+  id: VoxGirder
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: voxGirder
+          completed:
+            - !type:SnapToGrid {} # Frontier: use default ctor
+              # southRotation: true # Frontier
+          steps:
+            - material: Brass
+              amount: 2
+              doAfter: 1
+
+    - node: voxGirder
+      entity: VoxGirder
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetBrass1
+              amount: 2
+            - !type:DeleteEntity {}
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+        - to: voxWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 2
+
+        - to: reinforcedVoxGirder
+          completed:
+            - !type:SnapToGrid
+              southRotation: false
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+    - node: voxWall
+      entity: VoxWallSolid
+      edges:
+        - to: voxGirder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Welding
+              doAfter: 10
+
+    - node: reinforcedVoxGirder
+      entity: ReinforcedVoxGirder
+      edges:
+        - to: reinforcedVoxWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: voxGirder
+          completed:
+            - !type:SnapToGrid {} # Frontier: use default ctor
+              # southRotation: true # Frontier
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - tool: Cutting
+              doAfter: 2
+
+    - node: reinforcedVoxWall
+      entity: VoxWallReinforced
+      edges:
+        - to: reinforcedVoxGirder
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 4
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 3
+            - tool: Welding
+              doAfter: 10
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 2
+            - tool: Prying
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 1
+            - tool: Screwing
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 0
+            - tool: Cutting
+              doAfter: 1

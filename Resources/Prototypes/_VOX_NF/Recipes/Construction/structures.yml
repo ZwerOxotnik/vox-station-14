@@ -1,0 +1,51 @@
+- type: construction
+  id: VoxGirder
+  graph: VoxGirder
+  startNode: start
+  targetNode: voxGirder
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: ReinforcedVoxGirder
+  graph: VoxGirder
+  startNode: start
+  targetNode: reinforcedVoxGirder
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: VoxWall
+  graph: VoxGirder
+  startNode: start
+  targetNode: voxWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: ReinforcedVoxWall
+  graph: VoxGirder
+  startNode: start
+  targetNode: reinforcedVoxWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
