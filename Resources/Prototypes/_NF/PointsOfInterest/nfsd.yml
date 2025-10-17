@@ -1,13 +1,15 @@
 # Author Info
-# GitHub:
-# Discord: Tjsip
+# GitHub: Mace70903
+# Discord: mace_70903
 
 # Maintainer Info
-# GitHub: ???
-# Discord: ???
+# GitHub: Mace70903
+# Discord: mace_70903
 
 # Notes:
 #
+<<<<<<< HEAD
+=======
 # - type: pointOfInterest
 #   id: Nfsd
 #   parent: BasePOI
@@ -19,8 +21,6 @@
 #   addComponents:
 #   - type: IFF
 #     color: "#ae7d57"
-#   - type: ProtectedGrid
-#     preventEmpEvents: true
 #   - type: StationTransit
 #     routes:
 #       SpawnPoints: 10
@@ -52,9 +52,11 @@
 #             Cadet: [ 0, 0 ]
 #             # Others:
 #             PublicAffairsLiaison: [ 1, 1 ]
+#             Prisoner: [ 0, 0 ]
 #           tags:
 #           - HeadOfPersonnel
 #           - HeadOfSecurity
 #         - type: StationDeadDropReporting
 #           messageSet: Nfsd
 #         - type: StationDeadDropHintExempt
+>>>>>>> fork/master
